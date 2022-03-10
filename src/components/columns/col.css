@@ -1,0 +1,26 @@
+.col{
+    flex: 1;
+    /* min-height: calc(var(--paper-height) - 9rem); */
+    display: flex;
+    justify-content: center;
+    margin: 0 0.2rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 0%;
+}
+
+.col-title{
+    background-color: #003362;
+    color: white;
+    padding: 0.2rem 0.2rem 0.4rem 0.2rem;
+    flex: 1;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.col-content{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(143, 0, 0);
+}

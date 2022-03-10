@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Paper from "./components/alertpaper/Paper";
+import ControlPanel from "./components/controlpanel/ControlPanel";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [columns, setColumns] = useState({
+        "fa-ad": false,
+        "fa-prog": false,
+        "spn-prog": false,
+    });
+
+    return (
+        <div className="core-container">
+            <ControlPanel columns={columns} setColumns={setColumns} />
+            <Paper columns={columns} />
+        </div>
+    );
 }
 
 export default App;

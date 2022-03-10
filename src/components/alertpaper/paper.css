@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+:root{
+    /* --paper-height: calc(3508px/5);
+    --paper-width: calc(2480px/5); */
+    --paper-height: 842px;
+    --paper-width: 595px;
+}
+
+.paper-layout{
+    min-height: var(--paper-height);
+    max-width: var(--paper-width);
+    width: 100%;
+    background-color: white;
+}
+
+.paper-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem;
+}
+
+.paper-header{
+    min-height: 8rem;
+    max-width: var(--paper-width);
+    background-color: #5DC6E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tv-icon{
+    align-self: center;
+}
+
+.paper-title{
+    font-family: 'Timmana', sans-serif;
+    font-size: 2em;
+    color: #003362;
+}
