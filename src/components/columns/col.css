@@ -1,26 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
 .col{
     flex: 1;
     /* min-height: calc(var(--paper-height) - 9rem); */
     display: flex;
     justify-content: center;
     margin: 0 0.2rem;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     height: 0%;
+    /* border: 1px solid black; */
 }
 
 .col-title{
     background-color: #003362;
     color: white;
-    padding: 0.2rem 0.2rem 0.4rem 0.2rem;
+    padding: 0.4rem 0.2rem 0 0.2rem;
     flex: 1;
     text-align: center;
     border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Timmana', sans-serif;
+    font-size: 1.2em;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .col-content{
+    flex: 1;
     height: 100px;
-    width: 100px;
-    background-color: rgb(143, 0, 0);
+    min-width: 180px;
+    width: 100%;
+    flex-grow: 0;
+    background-color: #EEEEEE;
+    margin: 1px;
+}
+
+.producttype{
+    flex: 1;
+    min-width: 180px;
+    width: 100%;
+    flex-grow: 0;
+    background-color: #009006;
+    color: white;
+    padding: 0.5em 0.2em 0 0.2em;
+    font-family: 'Timmana', sans-serif;
+    text-align: center;
+    margin: 1px;
+}
+
+.companyname{
+    background-color: #3B95E8;
 }
