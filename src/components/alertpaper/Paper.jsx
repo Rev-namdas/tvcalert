@@ -1,11 +1,11 @@
 import React from "react";
-import FirstAppearedProgram from "../columns/FirstAppearedProgram";
-import SponsoredProgram from "../columns/SponsoredProgram";
 import AdIcon from "../../img/icon_ad.png";
 import ProgIcon from "../../img/icon_prog.png";
 import TVIcon from "../../img/icon_tv.png";
 import "./paper.css";
 import FirstAppearedAd from "../columns/firstappearedad/FirstAppearedAd";
+import FirstAppearedProgram from "../columns/firstappearedprogram/FirstAppearedProgram";
+import SponsoredProgram from "../columns/sponsoredprogram/SponsoredProgram";
 
 export default function Paper({ columns }) {
     return (

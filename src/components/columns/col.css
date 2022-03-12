@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Timmana&display=swap");
 
-.col{
+.col {
     flex: 1;
     /* min-height: calc(var(--paper-height) - 9rem); */
     display: flex;
@@ -12,7 +12,7 @@
     /* border: 1px solid black; */
 }
 
-.col-title{
+.col-title {
     background-color: #003362;
     color: white;
     padding: 0.4rem 0.2rem 0 0.2rem;
@@ -20,40 +20,99 @@
     text-align: center;
     border-radius: 1rem;
     margin-bottom: 0.5rem;
-    font-family: 'Timmana', sans-serif;
+    font-family: "Timmana", sans-serif;
     font-size: 1.2em;
 }
 
-.content-wrapper{
+.content-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
-.col-content{
+.col-content {
     flex: 1;
     height: 100px;
     min-width: 180px;
     width: 100%;
     flex-grow: 0;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     margin: 1px;
 }
 
-.producttype{
+.producttype-wrapper, .programtype-wrapper {
     flex: 1;
     min-width: 180px;
     width: 100%;
     flex-grow: 0;
-    background-color: #009006;
-    color: white;
-    padding: 0.5em 0.2em 0 0.2em;
-    font-family: 'Timmana', sans-serif;
-    text-align: center;
     margin: 1px;
 }
 
-.companyname{
-    background-color: #3B95E8;
+.producttype, .programtype {
+    background-color: #009006;
+    color: white;
+    padding: 0.5em 0.2em 0 0.2em;
+    font-family: "Timmana", sans-serif;
+    text-align: center;
+}
+
+.adname-wrapper {
+    background-color: #eeeeee;
+    height: 100%;
+    padding: 0 0.5em;
+    /* text-align: justify;
+    text-justify: inter-word; */
+    text-align: center;
+}
+
+.programname-wrapper {
+    background-color: #eeeeee;
+    height: 100%;
+    /* text-align: justify;
+    text-justify: inter-word; */
+    text-align: center;
+}
+
+.companyname {
+    background-color: #5DC6E7;
+    color: #003362;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.2em 0;
+}
+
+.adname {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.programname {
+    padding: 0 0.5em;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.channellist{
+    text-align: right;
+}
+
+.channelname {
+    font-size: 0.8rem;
+}
+
+.famedia {
+    background-color: #5DC6E7;
+    padding: 0.2em 0.4em;
+    text-decoration: none;
+    color: black;
+}
+
+.launchingdatetime, .sponsoredby{
+    background-color: #5DC6E7;
+    flex: 1;
+    padding: 0.2em;
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
 }

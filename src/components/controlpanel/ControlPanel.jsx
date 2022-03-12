@@ -9,7 +9,7 @@ export default function ControlPanel({ columns, setColumns }) {
     }
 
     return (
-        <div>
+        <div style={{ marginBottom: '1rem' }}>
             <input type="checkbox" name="fa-ad" id="fa-ad" onChange={handleSelection} />
             <label htmlFor="fa-ad">First Appeared Ad</label>
 
